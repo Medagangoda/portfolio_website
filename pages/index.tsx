@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import { BsFillMoonStarsFill } from "react-icons/bs";
+
 
 
 export default function Home() {
@@ -14,9 +16,29 @@ export default function Home() {
           @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
       </Head>
-      
-      <main className="font-poppins">
-        
+       
+      <main className="font-poppins bg-yellow-50 min-h-screen px-10">
+        <section>
+          {/* navbar */}
+          <nav className="py-10 flex justify-between">
+            <h1 className="text-sm">
+              Developed by SANDUN SAMPATH
+            </h1>
+            <ul className="flex items-center">
+              <li>
+              <BsFillMoonStarsFill className="cursor-pointer text-xl mx-5"/>
+
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1h-He2PE1dul3Md-OmyW_RDIuKqQCwGXd/view?usp=sharing"
+
+                download={"resume"}
+                className="bg-yellow-400 text-black px-4 py-2 border-none rounded-md">Resume</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
       </main> 
         
       
